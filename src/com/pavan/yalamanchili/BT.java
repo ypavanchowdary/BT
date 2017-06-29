@@ -14,31 +14,45 @@ public class BT {
 	 */
 	Node root;
 	  
-    /* Returns true if binary tree with root as root is height-balanced */
-    void isBalanced(Node node) 
+    /* Returns true if BT with root as root is height-balanced */
+    boolean isBalanced(Node node) 
     {
+        int lh; /* for height of left hand side subtree*/
+  
+        int rh; /* for height of right hand side subtree */
+  
+      
+  
        
+  
+       
+        /* Tree height is not balanced*/
+        return false;
     }
   
-    /* UTILITY FUNCTIONS TO TEST isBalanced() FUNCTION */
-    /*  The function Compute the "height" of a tree. Height is the
-        number of nodes along the longest path from the root node
-        down to the farthest leaf node.*/
+   
     void height(Node node) 
     {
-      
+        
     }
   
     public static void main(String args[]) 
     {
         BT tree = new BT();
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+        tree.root.left.left.left = new Node(8);
+  
         
     }
 }
 
 
 /* Java program to determine if binary tree is 
-height balanced or not */
+height balanced or not balanced*/
  
 /* A binary tree node has data, pointer to left child,
 and a pointer to right child */
