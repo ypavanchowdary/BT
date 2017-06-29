@@ -25,17 +25,30 @@ public class BT {
         if (node == null)
             return true;
   
-       
+        /* Get the height of left side  and right side  sub trees */
+        lhs = height(node.left);
+        rhs = height(node.right);
+  
+        if (Math.abs(lhs - rhs) <= 1
+                && isBalanced(node.left)
+                && isBalanced(node.right)) 
+            return true;
   
        
         /* Tree height is not balanced*/
         return false;
     }
-  
+  /*This is to compute the Height of the tree*/
    
-    void height(Node node) 
+    int height(Node node) 
     {
-        
+    	  /* if tree is empty */
+        if (node == null)
+            return 0;
+  
+        /* If tree is not empty then height = 1 + max of left
+         height and right heights */
+        return 1 + Math.max(height(node.left), height(node.right));
     }
   
     public static void main(String args[]) 
@@ -47,7 +60,11 @@ public class BT {
         tree.root.left.left = new Node(4);
         tree.root.left.right = new Node(5);
         tree.root.left.left.left = new Node(8);
-  
+        if(tree.isBalanced(tree.root))
+        	
+            System.out.println("Tree is balanced");
+        else
+            System.out.println("Tree is not balanced");
         
     }
 }
