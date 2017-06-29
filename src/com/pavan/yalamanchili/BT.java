@@ -3,7 +3,7 @@
  */
 package com.pavan.yalamanchili;
 
-import java.util.Scanner;
+
 
 /**
  * @author ypava
@@ -56,25 +56,15 @@ public class BT {
     public static void main(String args[]) 
     {
         BT tree = new BT();
-        /*
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
-        tree.root.left.left.left = new Node(8);
-        */
-/* Let's Do this with Dynamic User Input now using Scanner Class*/ 
-        
-        Scanner s=new Scanner(System.in);
-        System.out.println("Enter The Root Node");
-        int rt=s.nextInt();
-        tree.root = new Node(rt);
-        
-        
-        
-        
-        
+      
+        tree.root = new Node(15);
+        tree.root.left = new Node(25);
+        tree.root.right = new Node(30);
+        tree.root.left.left = new Node(20);
+        tree.root.left.right = new Node(6);
+        tree.root.left.left.left = new Node(9);
+
+       
         if(tree.isBalanced(tree.root))
         {
         	
@@ -82,10 +72,10 @@ public class BT {
         	System.out.println("Tree is balanced");
         
         }else
-        {
+        	
             System.out.println("Tree is not balanced");
-        }
-        s.close();
+    
+        
     }
     
 }
