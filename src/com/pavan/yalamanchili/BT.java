@@ -12,11 +12,28 @@ public class BT {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	Node root;
+	  
+    /* Returns true if binary tree with root as root is height-balanced */
+    void isBalanced(Node node) 
+    {
+       
+    }
+  
+    /* UTILITY FUNCTIONS TO TEST isBalanced() FUNCTION */
+    /*  The function Compute the "height" of a tree. Height is the
+        number of nodes along the longest path from the root node
+        down to the farthest leaf node.*/
+    void height(Node node) 
+    {
+      
+    }
+  
+    public static void main(String args[]) 
+    {
+        BT tree = new BT();
+        
+    }
 }
 
 
