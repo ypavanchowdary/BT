@@ -17,11 +17,13 @@ public class BT {
     /* Returns true if BT with root as root is height-balanced */
     boolean isBalanced(Node node) 
     {
-        int lh; /* for height of left hand side subtree*/
+        int lhs; /* for height of left hand side subtree*/
   
-        int rh; /* for height of right hand side subtree */
+        int rhs; /* for height of right hand side subtree */
   
-      
+        /* If tree is empty then return true */
+        if (node == null)
+            return true;
   
        
   
